@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="138.2.114.202.sslip.io";
+        url.hostname="kr1.forgot.ml";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
